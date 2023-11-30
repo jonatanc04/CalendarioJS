@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="conSesion" class="">
+        <p class="titulo">Iniciar Sesión</p>
+
+        <div id="sesion" class="sesion">
+
+            <div id="nombre" class="inputs">
+                <div id="img">
+                    <img src="img/user.png"/>
+                </div>
+                <input type="text" id="user" placeholder="Nombre de usuario"/>
+            </div>
+            <div id="nombre" class="inputs">
+                <div id="img">
+                    <img src="img/pass.png"/>
+                </div>
+                <input type="password" id="pass" placeholder="Contraseña"/>
+            </div>
+
+            <div id="botones">
+                <input type="button" id="login" value="Iniciar Sesión"/>
+                <input type="button" id="regis" value="Registro"/>
+            </div>
+            <div id="alert">
+                <p id="mensaje"></p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="conCalendar" class="invisible">
+        <p id="errorIntro"></p>
+        <p id="titulo"></p>
+        <div id="calendar">
+            <div id="visual">
+                <img id="atras" class="arrow" src="img/left.png"/>
+                <div id="fecha">
+                    <p id="mes"></p>
+                    <p id="anyo"></p>
+                </div>
+                <img id="alante" class="arrow" src="img/right.png"/>
+
+                <div id="mon" class="title"><p class="nomDia">Lunes</p></div>
+                <div id="tue" class="title"><p class="nomDia">Martes</p></div>
+                <div id="wed" class="title"><p class="nomDia">Miércoles</p></div>
+                <div id="thu" class="title"><p class="nomDia">Jueves</p></div>
+                <div id="fri" class="title"><p class="nomDia">Viernes</p></div>
+                <div id="sat" class="title"><p class="nomDia">Sábado</p></div>
+                <div id="sun" class="title"><p class="nomDia">Domingo</p></div>
+                
+                <div id="dias">
+
+                </div>
+
+            </div>
+            <div id="content">
+                <div id="tareas">
+                    <p id="currentDay"></p>
+                    <div id="contTareas"></div>
+                </div>
+                <div id="agregar">
+                    <input type="text" id="nomTarea" placeholder="Nombre de la tarea"/>
+                    <input type="button" id="anyade" value="Añadir"/>
+                    <input type="button" id="cerrarSesion" value="Cerrar Sesión"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
